@@ -1,9 +1,14 @@
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
+import Home from "../pages/Home";
+import Info from "../pages/Info";
+import Settings from "../pages/Settings";
+import Account from "../pages/Account";
+
 const Tab = createMaterialBottomTabNavigator();
 
-export default function BottomTab({ Home, Info, Settings, Account }) {
+export default function BottomTab() {
     return (
         <Tab.Navigator
             initialRouteName="Home"
